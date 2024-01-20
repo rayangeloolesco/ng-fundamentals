@@ -3,10 +3,11 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --proxy-config proxy.conf.json",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "server": "node node_modules/ngf-server/server.js"
   },
   "private": true,
   "dependencies": {
@@ -18,8 +19,11 @@
     "@angular/platform-browser": "^17.0.0",
     "@angular/platform-browser-dynamic": "^17.0.0",
     "@angular/router": "^17.0.0",
+    "jquery": "^3.7.1",
     "ngf-bootstrap": "^0.0.5",
+    "ngf-server": "^1.0.3",
     "rxjs": "~7.8.0",
+    "save": "^2.9.0",
     "toastr": "^2.1.4",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.2"
